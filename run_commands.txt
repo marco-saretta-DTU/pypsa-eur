@@ -1,0 +1,5 @@
+# Dry run 
+snakemake solve_elec_networks --jobs 1 -n
+
+# Normal run 
+snakemake solve_elec_networks --jobs 1 

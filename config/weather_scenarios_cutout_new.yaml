@@ -1,0 +1,342 @@
+weather_year_2013:
+  snapshots:
+    start: "2013-01-01 00:00"
+    end: "2013-12-31 23:00"
+    inclusive: "both"
+  atlite:
+    default_cutout: europe-2013-era5
+    cutouts:
+      europe-2013-era5:
+        module: era5
+        x: [-12., 42.]
+        y: [33., 72]
+        dx: 0.25
+        dy: 0.25
+        time: ['2013', '2013']
+  renewable:
+    onwind:
+      cutout: europe-2013-era5
+    offwind-ac:
+      cutout: europe-2013-era5
+    offwind-dc:
+      cutout: europe-2013-era5
+    offwind-float:
+      cutout: europe-2013-era5
+    solar:
+      cutout: europe-2013-era5
+    solar-hsat:
+      cutout: europe-2013-era5
+    hydro:
+      cutout: europe-2013-era5
+  solar_thermal:
+    cutout: europe-2013-era5
+  sector:
+    heat_demand_cutout: europe-2013-era5
+  lines:
+    dynamic_line_rating:
+      cutout: europe-2013-era5
+
+#weather_year_2016:
+#  snapshots:
+#    start: "2016-01-01 00:00"
+#    end: "2016-12-31 23:00"
+#    inclusive: "both"
+#  atlite:
+#    default_cutout: europe-2016-era5_wnd10m_shear
+#    cutouts:
+#      europe-2016-era5_wnd10m_shear:
+#        module: era5
+#        x: [-12., 42.]
+#        y: [33., 72]
+#        dx: 0.25
+#        dy: 0.25
+#        time: ['2016', '2016']
+#  renewable:
+#    onwind:
+#      cutout: europe-2016-era5_wnd10m_shear
+#    offwind-ac:
+#      cutout: europe-2016-era5_wnd10m_shear
+#    offwind-dc:
+#      cutout: europe-2016-era5_wnd10m_shear
+#    offwind-float:
+#      cutout: europe-2016-era5_wnd10m_shear
+#    solar:
+#      cutout: europe-2016-era5_wnd10m_shear
+#    solar-hsat:
+#      cutout: europe-2016-era5_wnd10m_shear
+#    hydro:
+#      cutout: europe-2016-era5_wnd10m_shear
+#  solar_thermal:
+#    cutout: europe-2016-era5_wnd10m_shear
+#  sector:
+#    heat_demand_cutout: europe-2016-era5_wnd10m_shear
+#  lines:
+#    dynamic_line_rating:
+#      cutout: europe-2016-era5_wnd10m_shear
+#
+#weather_year_2017:
+#  snapshots:
+#    start: "2017-01-01 00:00"
+#    end: "2017-12-31 23:00"
+#    inclusive: "both"
+#  atlite:
+#    default_cutout: europe-2017-era5_wnd10m_shear
+#    cutouts:
+#      europe-2017-era5_wnd10m_shear:
+#        module: era5
+#        x: [-12., 42.]
+#        y: [33., 72]
+#        dx: 0.25
+#        dy: 0.25
+#        time: ['2017', '2017']
+#  renewable:
+#    onwind:
+#      cutout: europe-2017-era5_wnd10m_shear
+#    offwind-ac:
+#      cutout: europe-2017-era5_wnd10m_shear
+#    offwind-dc:
+#      cutout: europe-2017-era5_wnd10m_shear
+#    offwind-float:
+#      cutout: europe-2017-era5_wnd10m_shear
+#    solar:
+#      cutout: europe-2017-era5_wnd10m_shear
+#    solar-hsat:
+#      cutout: europe-2017-era5_wnd10m_shear
+#    hydro:
+#      cutout: europe-2017-era5_wnd10m_shear
+#  solar_thermal:
+#    cutout: europe-2017-era5_wnd10m_shear
+#  sector:
+#    heat_demand_cutout: europe-2017-era5_wnd10m_shear
+#  lines:
+#    dynamic_line_rating:
+#      cutout: europe-2017-era5_wnd10m_shear
+#
+#weather_year_2018:
+#  snapshots:
+#    start: "2018-01-01 00:00"
+#    end: "2018-12-31 23:00"
+#    inclusive: "both"
+#  atlite:
+#    default_cutout: europe-2018-era5_wnd10m_shear
+#    cutouts:
+#      europe-2018-era5_wnd10m_shear:
+#        module: era5
+#        x: [-12., 42.]
+#        y: [33., 72]
+#        dx: 0.25
+#        dy: 0.25
+#        time: ['2018', '2018']
+#  renewable:
+#    onwind:
+#      cutout: europe-2018-era5_wnd10m_shear
+#    offwind-ac:
+#      cutout: europe-2018-era5_wnd10m_shear
+#    offwind-dc:
+#      cutout: europe-2018-era5_wnd10m_shear
+#    offwind-float:
+#      cutout: europe-2018-era5_wnd10m_shear
+#    solar:
+#      cutout: europe-2018-era5_wnd10m_shear
+#    solar-hsat:
+#      cutout: europe-2018-era5_wnd10m_shear
+#    hydro:
+#      cutout: europe-2018-era5_wnd10m_shear
+#  solar_thermal:
+#    cutout: europe-2018-era5_wnd10m_shear
+#  sector:
+#    heat_demand_cutout: europe-2018-era5_wnd10m_shear
+#  lines:
+#    dynamic_line_rating:
+#      cutout: europe-2018-era5_wnd10m_shear
+#
+#weather_year_2019:
+#  snapshots:
+#    start: "2019-01-01 00:00"
+#    end: "2019-12-31 23:00"
+#    inclusive: "both"
+#  atlite:
+#    default_cutout: europe-2019-era5_wnd10m_shear
+#    cutouts:
+#      europe-2019-era5_wnd10m_shear:
+#        module: era5
+#        x: [-12., 42.]
+#        y: [33., 72]
+#        dx: 0.25
+#        dy: 0.25
+#        time: ['2019', '2019']
+#  renewable:
+#    onwind:
+#      cutout: europe-2019-era5_wnd10m_shear
+#    offwind-ac:
+#      cutout: europe-2019-era5_wnd10m_shear
+#    offwind-dc:
+#      cutout: europe-2019-era5_wnd10m_shear
+#    offwind-float:
+#      cutout: europe-2019-era5_wnd10m_shear
+#    solar:
+#      cutout: europe-2019-era5_wnd10m_shear
+#    solar-hsat:
+#      cutout: europe-2019-era5_wnd10m_shear
+#    hydro:
+#      cutout: europe-2019-era5_wnd10m_shear
+#  solar_thermal:
+#    cutout: europe-2019-era5_wnd10m_shear
+#  sector:
+#    heat_demand_cutout: europe-2019-era5_wnd10m_shear
+#  lines:
+#    dynamic_line_rating:
+#      cutout: europe-2019-era5_wnd10m_shear
+#
+#weather_year_2020:
+#  snapshots:
+#    start: "2020-01-01 00:00"
+#    end: "2020-12-31 23:00"
+#    inclusive: "both"
+#  atlite:
+#    default_cutout: europe-2020-era5_wnd10m_shear
+#    cutouts:
+#      europe-2020-era5_wnd10m_shear:
+#        module: era5
+#        x: [-12., 42.]
+#        y: [33., 72]
+#        dx: 0.25
+#        dy: 0.25
+#        time: ['2020', '2020']
+#  renewable:
+#    onwind:
+#      cutout: europe-2020-era5_wnd10m_shear
+#    offwind-ac:
+#      cutout: europe-2020-era5_wnd10m_shear
+#    offwind-dc:
+#      cutout: europe-2020-era5_wnd10m_shear
+#    offwind-float:
+#      cutout: europe-2020-era5_wnd10m_shear
+#    solar:
+#      cutout: europe-2020-era5_wnd10m_shear
+#    solar-hsat:
+#      cutout: europe-2020-era5_wnd10m_shear
+#    hydro:
+#      cutout: europe-2020-era5_wnd10m_shear
+#  solar_thermal:
+#    cutout: europe-2020-era5_wnd10m_shear
+#  sector:
+#    heat_demand_cutout: europe-2020-era5_wnd10m_shear
+#  lines:
+#    dynamic_line_rating:
+#      cutout: europe-2020-era5_wnd10m_shear
+#
+#weather_year_2021:
+#  snapshots:
+#    start: "2021-01-01 00:00"
+#    end: "2021-12-31 23:00"
+#    inclusive: "both"
+#  atlite:
+#    default_cutout: europe-2021-era5_wnd10m_shear
+#    cutouts:
+#      europe-2021-era5_wnd10m_shear:
+#        module: era5
+#        x: [-12., 42.]
+#        y: [33., 72]
+#        dx: 0.25
+#        dy: 0.25
+#        time: ['2021', '2021']
+#  renewable:
+#    onwind:
+#      cutout: europe-2021-era5_wnd10m_shear
+#    offwind-ac:
+#      cutout: europe-2021-era5_wnd10m_shear
+#    offwind-dc:
+#      cutout: europe-2021-era5_wnd10m_shear
+#    offwind-float:
+#      cutout: europe-2021-era5_wnd10m_shear
+#    solar:
+#      cutout: europe-2021-era5_wnd10m_shear
+#    solar-hsat:
+#      cutout: europe-2021-era5_wnd10m_shear
+#    hydro:
+#      cutout: europe-2021-era5_wnd10m_shear
+#  solar_thermal:
+#    cutout: europe-2021-era5_wnd10m_shear
+#  sector:
+#    heat_demand_cutout: europe-2021-era5_wnd10m_shear
+#  lines:
+#    dynamic_line_rating:
+#      cutout: europe-2021-era5_wnd10m_shear
+#
+#weather_year_2022:
+#  snapshots:
+#    start: "2022-01-01 00:00"
+#    end: "2022-12-31 23:00"
+#    inclusive: "both"
+#  atlite:
+#    default_cutout: europe-2022-era5_wnd10m_shear
+#    cutouts:
+#      europe-2022-era5_wnd10m_shear:
+#        module: era5
+#        x: [-12., 42.]
+#        y: [33., 72]
+#        dx: 0.25
+#        dy: 0.25
+#        time: ['2022', '2022']
+#  renewable:
+#    onwind:
+#      cutout: europe-2022-era5_wnd10m_shear
+#    offwind-ac:
+#      cutout: europe-2022-era5_wnd10m_shear
+#    offwind-dc:
+#      cutout: europe-2022-era5_wnd10m_shear
+#    offwind-float:
+#      cutout: europe-2022-era5_wnd10m_shear
+#    solar:
+#      cutout: europe-2022-era5_wnd10m_shear
+#    solar-hsat:
+#      cutout: europe-2022-era5_wnd10m_shear
+#    hydro:
+#      cutout: europe-2022-era5_wnd10m_shear
+#  solar_thermal:
+#    cutout: europe-2022-era5_wnd10m_shear
+#  sector:
+#    heat_demand_cutout: europe-2022-era5_wnd10m_shear
+#  lines:
+#    dynamic_line_rating:
+#      cutout: europe-2022-era5_wnd10m_shear
+#
+#
+#weather_year_2023:
+#  snapshots:
+#    start: "2023-01-01 00:00"
+#    end: "2023-12-31 23:00"
+#    inclusive: "both"
+#  atlite:
+#    default_cutout: europe-2023-era5_wnd10m_shear
+#    cutouts:
+#      europe-2023-era5_wnd10m_shear:
+#        module: era5
+#        x: [-12., 42.]
+#        y: [33., 72]
+#        dx: 0.25
+#        dy: 0.25
+#        time: ['2023', '2023']
+#  renewable:
+#    onwind:
+#      cutout: europe-2023-era5_wnd10m_shear
+#    offwind-ac:
+#      cutout: europe-2023-era5_wnd10m_shear
+#    offwind-dc:
+#      cutout: europe-2023-era5_wnd10m_shear
+#    offwind-float:
+#      cutout: europe-2023-era5_wnd10m_shear
+#    solar:
+#      cutout: europe-2023-era5_wnd10m_shear
+#    solar-hsat:
+#      cutout: europe-2023-era5_wnd10m_shear
+#    hydro:
+#      cutout: europe-2023-era5_wnd10m_shear
+#  solar_thermal:
+#    cutout: europe-2023-era5_wnd10m_shear
+#  sector:
+#    heat_demand_cutout: europe-2023-era5_wnd10m_shear
+#  lines:
+#    dynamic_line_rating:
+#      cutout: europe-2023-era5_wnd10m_shear
